@@ -4,83 +4,36 @@
   <head>
     <meta charset="utf-8">
     <title> Lorem News </title>
-    <style>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-      body {
-          font-family: "Segoe UI" , sans-serif;
-          padding: 1%;
-      }
-
-      header {
-        background : #e9ecef;
-        text-align: center;
-        padding-top: 0.25%
-        padding-bottom: 1.5%
-
-      }
-
-      #motto {
-
-        font-style: italic;
-
-      }
-
-      main {
-
-        width: 75%;
-        float: left;
-      }
-      nav {
-        width: 22%;
-        float: right;
-      }
-
-      main img{
-        float: left;
-        margin-right: 2%;
-
-      }
-      nav ul{
-        list-style: none;
-        padding: 0;
-
-      }
-      nav li{
-        padding: 5%;
-        border: 1px solid #e9ecef;
-
-      }
-      .article {
-        color: #007bff;
-        text-decoration: none;
-      }
-
-
-    </style>
   </head>
   <body>
-    <header>
+    <div class="container-fluid">
+    <header class="jumbotron text-center p-3 mb-3">
       <h1> Lorem News </h1>
       <!-- id in html give specific identifiers to tags and they need to be unique-->
-      <span id="motto"> The real fake news </span>
+      <span class="font-italic"> The real fake news </span>
     </header>
-    <main>
+    <div class="row">
+    <main class="col-md-9">
       <article>
         <h2> Featured Story Headline</h2>
-        <img src="http://via.placeholder.com/200x200">
+        <img src="http://via.placeholder.com/200x200" class="float-left mr-3">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi purus, viverra ut nibh et, rutrum facilisis felis. Integer id eros vitae risus viverra bibendum ut sed nisi. Fusce nec nibh vitae lorem iaculis tristique a id sem. Donec eleifend libero et lobortis fringilla. Vestibulum commodo commodo consequat. Nullam ultrices at ex ut posuere. Sed iaculis velit eget ex bibendum aliquet. Mauris mattis mauris quis libero posuere hendrerit. Donec augue urna, eleifend id nibh quis, pretium ornare arcu. Vestibulum et dui lorem. In nisl magna, eleifend nec egestas vel, viverra a est. Ut viverra ligula at nisl elementum, id lacinia urna consequat. Nam non tellus volutpat, maximus metus vel, mattis libero. Sed lacus mauris, aliquet vel sem ut, rutrum viverra ipsum. Proin nisl odio, dignissim vel porttitor eu, scelerisque vitae leo.</p>
         <p> Sed sagittis venenatis ex, nec ultricies mauris semper ut. Quisque pharetra ut nulla in sagittis. In hac habitasse platea dictumst. Vivamus euismod turpis et metus lobortis aliquet sed sed nulla. Phasellus elit orci, imperdiet nec accumsan quis, dapibus in nisi. Cras scelerisque vitae orci et cursus. Sed et aliquam arcu. Pellentesque varius ipsum odio, vitae consequat nulla gravida in.</p>
       </article>
     </main>
-    <nav>
+    <nav class="col-md-3">
       <h2> See Also </h2>
-      <ul>
-        <li><a href="#" class="article">Nullam quis sapien quis mi ultrices lacinia.</a> </li>
-        <li><a href="#" class="article">Morbi tincidunt lorem quis nulla viverra egestas.</a> </li>
-        <li><a href="#" class="article">Maecenas ornare justo at neque scelerisque porta.</a> </li>
-        <li><a href="#" class="article">Maecenas egestas nisi a diam porta maximus.</a> </li>
+      <ul class="list-group">
+        <li class="list-group-item"><a href="#" class="article">Nullam quis sapien quis mi ultrices lacinia.</a> </li>
+        <li class="list-group-item"><a href="#" class="article">Morbi tincidunt lorem quis nulla viverra egestas.</a> </li>
+        <li class="list-group-item"><a href="#" class="article">Maecenas ornare justo at neque scelerisque porta.</a> </li>
+        <li class="list-group-item"><a href="#" class="article">Maecenas egestas nisi a diam porta maximus.</a> </li>
       </ul>
     <nav>
+    </div>
+    </div>
   </body>
 </html>
